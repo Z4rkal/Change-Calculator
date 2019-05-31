@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Change Calculator</title>
-  </head>
-  <body>
-    <!-- Write your markup here -->
-    <h1>Change Calculator</h1>
-    <div id="input-fields">
+
+<head>
+  <meta charset="utf-8">
+  <title>Change Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- Write your markup here -->
+  <div id="head-div">
+    <h1 id="page-head">Change Calculator</h1>
+    <h2 id="page-desc"> This app will calculate how much change to give to a customer!</h2>
+  </div>
+  <div id="input-fields">
+    <div id="due-field">
       <p id="des1">How much is due for the sale?</p>
-      <input id="amount-due" type="text"/>
+      <div class="input-wrap">
+        <label for="amount-due">$</label>
+        <input id="amount-due" type="text" />
+      </div>
+    </div>
+    <div id="rec-field">
       <p id="des2">How much has the customer given you?</p>
-      <input id="amount-received" type="text"/>
+      <div class="input-wrap">
+        <label for="amount-received">$</label>
+        <input id="amount-received" type="text" />
+      </div>
     </div>
-    <button id="calculate-change">Calculate Change</button>
-    <div id="output">
-      <p id="error-field"></p>
-      <p id="dollars-output"></p>
-      <p id="quarters-output"></p>
-      <p id="dimes-output"></p>
-      <p id="nickels-output"></p>
-      <p id="pennies-output"></p>
+  </div>
+  <button id="calculate-change">Calculate Change</button>
+  <div id="output">
+    <div class="output-div">
+      <p class="output-field" id="error-field"></p>
+      <div id="dol">
+        <p id="dolp">Dollars</p>
+        <p class="output-field" id="dollars-output">0</p>
+      </div>
     </div>
-    <!-- Don't forget to add your <script> tag here -->
-    <script src="main.js" charset="utf-8"></script>
-  </body>
+    <div class="output-div">
+      <div id="qrt">
+        <p id="qrtp">Quarters</p>
+        <p class="output-field" id="quarters-output">0</p>
+      </div>
+      <div id="dim">
+        <p id="dimp">Dimes</p>
+        <p class="output-field" id="dimes-output">0</p>
+      </div>
+      <div id="nic">
+        <p id="nicp">Nickels</p>
+        <p class="output-field" id="nickels-output">0</p>
+      </div>
+      <div id="pen">
+        <p id="penp">Pennies</p>
+        <p class="output-field" id="pennies-output">0</p>
+      </div>
+    </div>
+  </div>
+  <!-- Don't forget to add your <script> tag here -->
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
 </html>

@@ -1,0 +1,112 @@
+body {
+    white-space: nowrap;
+    overflow: hidden;
+    /* background-image: linear-gradient(#55CDFC,#F7A8B8,#FFFFFF,#F7A8B8,#55CDFC);
+    background-repeat: repeat-x; */
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANUAAABqCAMAAAAcAuQRAAAAGFBMVEVbzvr1qbj///9azvrbscf3qLf1orP74OWZGL5sAAAAlklEQVR4nO3bwQ0CUQxDwQAL23/HNLFfka2ZDl6OljIDAAAAFPg02j7qIVej+TaaVyNVOVTlUJVDVQ5VOVTlUJVDVY7Sql+juRvNu5GqHKpyqMqhKoeqHKpyqMqhKoeqHKVV28PJEaXL2fYgeYSqHKpyqMqhKoeqHKpyqMqhKkdp1fajyhGln0qdtp/1jtg+KgAAAPCEPyIKaNeNLn1mAAAAAElFTkSuQmCC");
+    background-repeat: repeat-x;
+    background-clip: inherit;
+    background-attachment: local;
+}
+
+#page-head {
+    margin-top: 1.1em;
+    margin-bottom: .44em;
+    text-align: center;
+    font-style: italic;
+}
+
+#page-desc {
+    margin-bottom: .2em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.input-wrap label {
+    padding: 1px;
+}
+
+.input-wrap input {
+    width: 95%;
+    border: 0px solid #e6e6e6;
+    border-radius: 4px;
+    outline: 0;
+}
+
+.input-wrap {
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    width: 80%;
+    font: 400 11px system-ui;
+    background-color: #ffffff;
+}
+
+#input-fields p {
+    font-size: .75em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+}
+
+#due-field .input-wrap, #due-field p{
+    margin: 1px 2px 1px auto;
+}
+
+#rec-field .input-wrap, #rec-field p{
+    margin: 1px auto 1px 2px;
+}
+
+#input-fields {
+    width: inherit;
+    background-color: #f4f4f4;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+}
+
+#due-field, #rec-field {
+    width: 39%;
+    display: inline-block;
+}
+
+#due-field {
+    margin: 5px 1% 5px 10%;
+}
+
+#rec-field {
+    margin: 5px 10% 5px 1%;
+}
+
+#calculate-change {
+    margin: 2px 40% 2px 40%;
+    width: 20%;
+}
+
+.output-div {
+    width: inherit;
+    background-color: #f4f4f4;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+}
+
+.output-div div {
+    display: inline-block;
+}
+
+#dol {
+    width: 10%;
+    margin: 2px 45% 2px;
+    text-align: center;
+}
+
+#qrt, #dim, #nic, #pen {
+    width: 10%;
+    margin: 2px 7.5% 2px 7.1%;
+    text-align: center;
+}
+
+#error-field {
+    text-align: center;
+    font-weight: 600;
+    margin: 0 auto 0;
+}

@@ -6,6 +6,10 @@ function calculateChange(amtDue,amtGiven) {
 */  var result = []; //[dollars,quarters,dimes,nickels,pennies]
     changeDue = amtGiven - amtDue;
     // console.log('Change due: ' + changeDue);
+    // var [twdol,twdolC] = handleCalculation(changeDue,2000);
+    // var [tdol,tdolC] = handleCalculation(twdolC,1000);
+    // var [fdol,fdolC] = handleCalculation(tdolC,500);
+    // var [ddol,ddolC] = handleCalcualtion(fdolC,200);
     var [dol,dolC] = handleCalculation(changeDue,100);
     // console.log(dol + ' ' + dolC);
     var [qrt,qrtC] = handleCalculation(dolC,25);
@@ -50,20 +54,20 @@ function handleClickEvent() {
     if(parseInt(String(document.getElementById('amount-due').value * 100)) > parseInt(String(document.getElementById('amount-received').value * 100))) {
         //console.log('The customer didn\'t give enough money!');
     document.getElementById('error-field').textContent = 'The customer didn\'t give you enough money!';
-    document.getElementById('dollars-output').textContent = '';
-    document.getElementById('quarters-output').textContent = '';
-    document.getElementById('dimes-output').textContent = '';
-    document.getElementById('nickels-output').textContent = '';
-    document.getElementById('pennies-output').textContent = '';
+    document.getElementById('dollars-output').textContent = '0';
+    document.getElementById('quarters-output').textContent = '0';
+    document.getElementById('dimes-output').textContent = '0';
+    document.getElementById('nickels-output').textContent = '0';
+    document.getElementById('pennies-output').textContent = '0';
     }
     else {
     var result = calculateChange(parseInt(String(document.getElementById('amount-due').value * 100)),parseInt(String(document.getElementById('amount-received').value * 100)));
     document.getElementById('error-field').textContent = '';
-    document.getElementById('dollars-output').textContent = 'Dollars: ' + result[0];
-    document.getElementById('quarters-output').textContent = 'Quarters: ' + result[1];
-    document.getElementById('dimes-output').textContent = 'Dimes: ' + result[2];
-    document.getElementById('nickels-output').textContent = 'Nickels: ' + result[3];
-    document.getElementById('pennies-output').textContent = 'Pennies: ' + result[4];
+    document.getElementById('dollars-output').textContent = result[0];
+    document.getElementById('quarters-output').textContent = result[1];
+    document.getElementById('dimes-output').textContent = result[2];
+    document.getElementById('nickels-output').textContent = result[3];
+    document.getElementById('pennies-output').textContent = result[4];
     }
 }
 
